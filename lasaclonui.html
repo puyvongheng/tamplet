@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lazada UI Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔝 Top Banner (Promotion) -->
+  <div class="bg-pink-500 text-white text-sm text-center py-2 font-medium">
+    ดาวน์โหลดแอปเพื่อรับส่วนลดพิเศษ &nbsp; | &nbsp;
+    <a href="#" class="underline">Download on App Store / Play Store</a>
+  </div>
+
+  <!-- 🔍 Navigation -->
+  <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+    <img src="https://icms-image.slatic.net/images/ims-web/ef4f1fdc-47b1-4c64-9a92-19e06c20f517.png" class="w-24">
+    <input type="text" placeholder="Search in Lazada"
+      class="border px-4 py-2 rounded-lg w-1/2 focus:outline-none focus:ring ring-blue-300" />
+    <div class="flex items-center gap-4">
+      <button>🛒</button>
+      <button>👤</button>
+    </div>
+  </nav>
+
+  <!-- 🎠 Banner Carousel -->
+  <section class="my-6 px-4">
+    <div class="swiper w-full max-w-6xl mx-auto rounded-xl overflow-hidden">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://img.lazcdn.com/us/domino/001ced4b-ace1-489d-a32f-1a689176ac39_TH-1976-688.jpg_2200x2200q80.jpg_.avif" /></div>
+        <div class="swiper-slide"><img src="https://img.lazcdn.com/us/domino/1f06a3ba-6504-42b5-aab2-2862dd3bc9ad_TH-1976-688.jpg_2200x2200q80.jpg_.avif" /></div>
+        <div class="swiper-slide"><img src="https://img.lazcdn.com/us/domino/86dd8239-ba6f-481e-9ce2-60e05ef9c839_TH-1976-688.jpg_2200x2200q80.jpg_.avif" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🧾 Category Icons -->
+  <section class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4 max-w-6xl mx-auto mb-8 px-4 text-center">
+    <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg">
+      <img src="https://img.icons8.com/fluency/48/discount.png" class="mx-auto mb-2">
+      <p class="text-sm font-medium">Voucher</p>
+    </div>
+    <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg">
+      <img src="https://img.icons8.com/fluency/48/airport.png" class="mx-auto mb-2">
+      <p class="text-sm font-medium">Travel</p>
+    </div>
+    <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg">
+      <img src="https://img.icons8.com/fluency/48/bill.png" class="mx-auto mb-2">
+      <p class="text-sm font-medium">Top Up</p>
+    </div>
+    <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg">
+      <img src="https://img.icons8.com/fluency/48/shoes.png" class="mx-auto mb-2">
+      <p class="text-sm font-medium">Sneakers</p>
+    </div>
+    <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg">
+      <img src="https://img.icons8.com/fluency/48/gift-card.png" class="mx-auto mb-2">
+      <p class="text-sm font-medium">Gift Cards</p>
+    </div>
+    <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg">
+      <img src="https://img.icons8.com/fluency/48/sale.png" class="mx-auto mb-2">
+      <p class="text-sm font-medium">Flash Sale</p>
+    </div>
+  </section>
+
+  <!-- 🚀 Swiper Script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</body>
+</html>
